@@ -72,14 +72,15 @@ WSGI_APPLICATION = 'assistant.wsgi.application'
 # Base de données
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.getenv("DB_NAME", "assistantacademy"),
-        'USER': os.getenv("DB_USER", "root"),
-        'PASSWORD': os.getenv("DB_PASSWORD", "root"),
-        'HOST': os.getenv("DB_HOST", "127.0.0.1"),
-        'PORT': os.getenv("DB_PORT", "3307"),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'assistantacademy',
+        'USER': 'postgres',
+        'PASSWORD': 'sambatra',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
+
 
 # Validation des mots de passe
 AUTH_PASSWORD_VALIDATORS = [
