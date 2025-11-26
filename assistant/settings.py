@@ -90,7 +90,7 @@ USE_I18N = True
 USE_TZ = True
 
 # CORS
-CORS_ALLOWED_ORIGINS = os.environ.get("CORS_ALLOWED_ORIGINS", "http://localhost:5173").split(",")
+CORS_ALLOWED_ORIGINS = os.environ.get("CORS_ALLOWED_ORIGINS", "https://darling-pegasus-8a00d8.netlify.app").split(",")
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_URLS_REGEX = r'^/api/.*$'
 X_FRAME_OPTIONS = 'ALLOWALL'
