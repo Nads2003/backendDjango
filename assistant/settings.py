@@ -72,7 +72,7 @@ WSGI_APPLICATION = 'assistant.wsgi.application'
 
 # Base de données PostgreSQL Render
 DATABASES = {
-    'default': dj_database_url.config(default=os.environ.get("DATABASE_URL"))
+    'default': dj_database_url.config(default=os.environ.get("postgresql://assitantacademy_user:3u11B8H1KjB3qjW1zkvw0GC6TwWUNAtt@dpg-d4jcm9mmcj7s73bf5h80-a/assitantacademy"))
 }
 
 # Validation des mots de passe
